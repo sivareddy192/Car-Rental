@@ -1,4 +1,4 @@
-export const baseURL = import.meta.env.VITE_BASE_URL || (import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL.replace(/\/api\/?$/, '') : 'http://localhost:2000');
+export const baseURL = import.meta.env.BASE_URL || (import.meta.env.API_URL ? import.meta.env.API_URL.replace(/\/api\/?$/, '') : 'http://localhost:2000');
 // export const baseURL = "http://localhost:8080"
 // export const baseURL = "http://localhost:8000"
 
