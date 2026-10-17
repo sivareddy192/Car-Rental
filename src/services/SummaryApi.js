@@ -1,6 +1,8 @@
-export const baseURL = import.meta.env.BASE_URL || (import.meta.env.API_URL ? import.meta.env.API_URL.replace(/\/api\/?$/, '') : 'http://localhost:2000');
-// export const baseURL = "http://localhost:8080"
-// export const baseURL = "http://localhost:8000"
+export const baseURL =
+  import.meta.env.VITE_BACKEND_URL ||
+  (import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL.replace(/\/api\/?$/, '') : null) ||
+  (import.meta.env.BASE_URL && import.meta.env.BASE_URL !== '/' ? import.meta.env.BASE_URL : null) ||
+  'https://car-rental-backend-xi-liard.vercel.app';
 
 const SummaryApi = {
   // ─── User & Authentication ───────────────────────────────────────────────────
