@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        var savedTheme = localStorage.getItem('rd_theme');
+        var theme = savedTheme === 'dark' ? 'dark' : 'light';
+        var root = document.documentElement;
+        root.classList.toggle('dark', theme === 'dark');
+        root.classList.toggle('light', theme === 'light');
+        root.style.colorScheme = theme;
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polygon points='12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2'></polygon></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Car Rental</title>
+    <meta name="description" content="Hyderabad's premier luxury automotive fleet. Self-drive exotics, chauffeur-driven VIP airport transfers, wedding luxury car hire, and custom holiday tours." />
+    <meta name="keywords" content="luxury car rental, rolls royce hire, mercedes s-class rental, wedding car hyderabad, airport taxi transfer, self drive luxury cars, royaldrives" />
+    <meta name="author" content="Car Rental Prestige Mobility" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://royaldrives.com" />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Car Rental" />
+    <meta property="og:description" content="Experience the finest luxury car rentals, chauffeur-driven VIP services, wedding cars, and bespoke tour packages." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1631295868223-63265b40d9e4?auto=format&fit=crop&w=1200&q=80" />
+    <meta property="og:url" content="https://royaldrives.com" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
