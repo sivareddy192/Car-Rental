@@ -66,7 +66,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://res.cloudinary.com https://crackersbackend.vercel.app; connect-src 'self' https://crackersbackend.vercel.app https://tracly.in; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://res.cloudinary.com https://rental-car-backend-phi.vercel.app/; connect-src 'self' https://rental-car-backend-phi.vercel.app/; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
         }
       ]
     }
