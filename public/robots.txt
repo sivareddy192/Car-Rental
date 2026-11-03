@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin-portal/
+Disallow: /dealer/
+Disallow: /agent/
+Disallow: /dashboard/
+Disallow: /api/
+
+Sitemap: https://driverent.in/sitemap.xml
