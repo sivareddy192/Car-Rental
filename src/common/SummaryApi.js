@@ -1,4 +1,4 @@
-const rawBaseURL = import.meta.env.VITE_API_URL || "https://rental-car-backend-phi.vercel.app";
+const rawBaseURL = import.meta.env.CONFIG_URL || "https://rental-car-backend-phi.vercel.app";
 
 export const baseURL = rawBaseURL ? rawBaseURL.trim().replace(/\/+$/, "") : "";
 
